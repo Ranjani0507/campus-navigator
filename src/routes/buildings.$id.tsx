@@ -138,7 +138,7 @@ function BuildingDetail() {
             <Card className="p-6 shadow-soft">
               <h3 className="mb-3 font-display text-lg font-semibold">Nearby</h3>
               <div className="space-y-2">
-                {nearby.map((n) => n && (
+                {nearby.map((n: Building) => (
                   <Link
                     key={n.id}
                     to="/buildings/$id"
