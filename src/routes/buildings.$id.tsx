@@ -4,9 +4,10 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { getBuilding, buildings } from "@/lib/campus-data";
+import { getBuilding, buildings, type Building } from "@/lib/campus-data";
 import { useFavorites } from "@/lib/favorites";
 import { cn } from "@/lib/utils";
+
 
 export const Route = createFileRoute("/buildings/$id")({
   loader: ({ params }) => {
