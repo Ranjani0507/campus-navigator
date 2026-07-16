@@ -35,10 +35,12 @@ export const Route = createFileRoute("/buildings/$id")({
 });
 
 function BuildingDetail() {
-  const { building: b } = Route.useLoaderData();
+  const data = Route.useLoaderData() as { building: Building };
+  const b = data.building;
   const { has, toggle, hydrated } = useFavorites();
   const fav = hydrated && has(b.id);
-  const nearby = b.nearby.map((id) => buildings.find((x) => x.id === id)).filter(Boolean);
+  const nearby = b.nearby.map((id: string) => buildings.find((x) => x.id === id)).filter(Boolean) as Building[];
+
 
   return (
     <>
