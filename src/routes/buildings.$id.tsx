@@ -71,7 +71,8 @@ function BuildingDetail() {
               <Layers className="h-5 w-5 text-primary" /> Floors
             </h2>
             <ul className="divide-y divide-border">
-              {b.floors.map((f, i) => (
+              {b.floors.map((f: string, i: number) => (
+
                 <li key={i} className="flex items-center gap-4 py-3 text-sm">
                   <div className="grid h-8 w-8 place-items-center rounded-lg bg-secondary font-semibold text-primary">
                     {i}
