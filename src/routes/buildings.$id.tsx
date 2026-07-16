@@ -87,8 +87,9 @@ function BuildingDetail() {
             <Card className="p-6 shadow-soft">
               <h2 className="mb-3 font-display text-xl font-semibold">Departments here</h2>
               <div className="flex flex-wrap gap-2">
-                {b.departments.map((d) => (
+                {b.departments.map((d: string) => (
                   <Badge key={d} variant="secondary" className="rounded-full px-3 py-1">{d}</Badge>
+
                 ))}
               </div>
             </Card>
