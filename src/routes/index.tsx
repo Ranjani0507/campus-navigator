@@ -24,8 +24,8 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Campus Navigation Portal — Find your way around campus" },
       { name: "description", content: "Interactive campus map, buildings, departments and facilities. Search any location and get instant directions." },
-      { property: "og:title", content: "Campus Navigation Portal" },
-      { property: "og:description", content: "Find any building, department or facility on campus in seconds." },
+      { property: "og:title", content: "Campus Navigation Portal — Find your way around campus" },
+      { property: "og:description", content: "Interactive campus map, buildings, departments and facilities. Search any location and get instant directions." },
     ],
   }),
   component: Home,
